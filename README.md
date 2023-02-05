@@ -20,3 +20,25 @@ where $x \in [0,1]$ is the cumulative probability distribution of gains or losse
 and: $L_{TK-BUB-v2} = \frac{l_2^{\gamma}}{[l_2^{\gamma}+(1-l_2)^{\gamma}]^{\frac{1}{\gamma}}}$
 
 Above we have proposed two versions of the TK-BUB loss function. As regard to the parameter $\gamma$, experiments have been conducted with high values of $\gamma$ till it indicates that the overall result displays the best when $\gamma \in (1,2)$ and in addition, the best performance is confirmed with $\gamma=\frac{4}{3}$. Thus we train all experiments in case of $\gamma=\frac{4}{3}$. Carefully taking a look into both versions of the TK-BUB loss function, if the nominator value is powered by base $\gamma=\frac{4}{3}>1$, the denominator value is powered by base $\approx \gamma \times \frac{1}{\gamma} = 1$, as a result, the nominator value tends to converge faster than the denominator value. As can be seen that $l_1>l_2$, it follows that $L_{TK-BUB-v2}$ has a better convergence speed than $L_{TK-BUB-v1}$. As a consequence, we choose $L_{TK-BUB-v2}$ for our end-to-end training process. Tables in later sections will prove that our proposed $L_{TK-BUB-v2}$ gaining the best convergence speed as well as the most accurate segmentation results.
+## Results
+![table1](https://github.com/tswizzle141/An-EffcientNet-encoder-U-Net-Joint-Residual-Refinement-Module-with-TK-BUB-Loss/blob/main/2.jpg)
+![table2](https://github.com/tswizzle141/An-EffcientNet-encoder-U-Net-Joint-Residual-Refinement-Module-with-TK-BUB-Loss/blob/main/3.jpg)
+![table3](https://github.com/tswizzle141/An-EffcientNet-encoder-U-Net-Joint-Residual-Refinement-Module-with-TK-BUB-Loss/blob/main/4.jpg)
+![table4](https://github.com/tswizzle141/An-EffcientNet-encoder-U-Net-Joint-Residual-Refinement-Module-with-TK-BUB-Loss/blob/main/5.jpg)
+![table5](https://github.com/tswizzle141/An-EffcientNet-encoder-U-Net-Joint-Residual-Refinement-Module-with-TK-BUB-Loss/blob/main/6.jpg)
+![table6](https://github.com/tswizzle141/An-EffcientNet-encoder-U-Net-Joint-Residual-Refinement-Module-with-TK-BUB-Loss/blob/main/7.jpg)
+![table7](https://github.com/tswizzle141/An-EffcientNet-encoder-U-Net-Joint-Residual-Refinement-Module-with-TK-BUB-Loss/blob/main/8.jpg)
+## Citation
+If you find our work useful for your research, please cite at:
+
+`@article{efficient_rrm,
+    title = {An EffcientNet-encoder U-Net Joint Residual Refinement Module with Tversky–Kahneman Baroni–Urbani–Buser loss for biomedical image Segmentation},
+    journal = {Biomedical Signal Processing and Control},
+    volume = {83}, pages = {104631},
+    year = {2023},
+    issn = {1746-8094},
+    doi = {https://doi.org/10.1016/j.bspc.2023.104631},
+    url = {https://www.sciencedirect.com/science/article/pii/S1746809423000642},
+    author = {Do-Hai-Ninh Nham and Minh-Nhat Trinh and Viet-Dung Nguyen and Van-Truong Pham and Thi-Thao Tran}
+}
+`
